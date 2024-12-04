@@ -18,7 +18,7 @@ jobs:
         shell: cmd
         run: |
           curl https://github.com/dirkarnez/gnucobol-portable/releases/download/v3.2/gnucobol-portable-v3.2.zip -L --output compiler.zip &&^
-          7z.exe x compiler.zip -o"%USERPROFILE%\Downloads\gnucobol-portable"
+          7z.exe x compiler.zip -o"%USERPROFILE%\Downloads\gnucobol-portable-v3.2"
           
       # - name: curl cmake-3.24.0-windows-x86_64.zip
       #   shell: cmd
@@ -85,12 +85,13 @@ jobs:
         uses: thedoctor0/zip-release@master
         with:
           type: 'zip'
-          directory: "build"
+          path: |
+            main.exe
           filename: "${{ github.event.repository.name }}-${{ github.ref_name }}.zip"
         
       - name: Release prebuilt
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "build/${{ github.event.repository.name }}-${{ github.ref_name }}.zip"
+          artifacts: "${{ github.event.repository.name }}-${{ github.ref_name }}.zip"
           allowUpdates: true
           token: ${{ secrets.GITHUB_TOKEN }}
