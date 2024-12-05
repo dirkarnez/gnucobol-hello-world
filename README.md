@@ -16,3 +16,8 @@ set "COB_CFLAGS=-static" && cobc -verbose -static -x main.cob
 - [Running GnuCobol on Linux. What is GnuCOBOL? | by Rucha Tare | Medium](https://ruchatare.medium.com/running-gnucobol-on-linux-2165959461d)
 - [E List of Intrinsic Functions — GnuCOBOL master-with-README (5c51860 ) (2024/01/19 16:54) documentation](https://superbol.eu/gnucobol/gnucobpg/chapter17.html)
 - [COBOL/C Interoperability - COBOL IT Compiler Suite](https://www.microfocus.com/documentation/cobol-it/4-11/user-guide/getting-started/interoperability-cobol-c.html)
+
+### Tutorials
+- [Compile — GnuCOBOL master (5f61ae6 ) (2023/10/03 00:13) documentation](https://superbol.eu/gnucobol/manual/chapter2.html)
+- [GnuCOBOL Manual](https://gnucobol.sourceforge.io/doc/gnucobol.html#Multiple-sources)
+- [openmainframeproject/cobol-programming-course: Training materials and labs for a "Getting Started" level course on COBOL](https://github.com/openmainframeproject/cobol-programming-course)
