@@ -9,7 +9,8 @@ set "COB_CFLAGS=-static" && cobc -verbose -static -x main.cob
 ```
 ### Notes
 - For a self-contained, standalone exe, gnucobol binaries should also be built along with static libraries internally use (zlib, gmp, etc)
-
+- > If you need to use a GCC compiler other than the one included in this package, you can use the tool gc-config to change the GCC compiler used by GnuCOBOL.
+    - https://superbol.eu/en/developers/windows-aio-3.2/
 ### Reference
 - [MartinSandstrom/cobol-hello-world](https://github.com/MartinSandstrom/cobol-hello-world)
 - [Running GnuCobol on Linux. What is GnuCOBOL? | by Rucha Tare | Medium](https://ruchatare.medium.com/running-gnucobol-on-linux-2165959461d)
